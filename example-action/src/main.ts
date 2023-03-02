@@ -24,8 +24,9 @@ const run = async (inputs: Inputs) => {
   }
 }
 
-const main = async () => await run({
-  token: process.env.GITHUB_TOKEN ?? '',
-})
+const main = async () =>
+  await run({
+    token: process.env.GITHUB_TOKEN ?? '',
+  })
 
 main().catch((e) => core.setFailed(e instanceof Error ? e : String(e)))
