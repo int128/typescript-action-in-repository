@@ -29,6 +29,8 @@ jobs:
           cache-dependency-path: example-action/yarn.lock
       - run: yarn
       - run: yarn start
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
   check:
     runs-on: ubuntu-latest
