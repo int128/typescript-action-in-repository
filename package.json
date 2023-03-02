@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@actions/exec": "^1.1.1",
-    "@actions/github": "^5.1.1"
-  }
-}
