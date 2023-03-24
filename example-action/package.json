@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "ts-node src/main.ts",
-    "build": "tsc",
+    "typecheck": "tsc --noEmit",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint **/*.ts",
