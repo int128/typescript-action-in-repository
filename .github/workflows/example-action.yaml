@@ -33,7 +33,10 @@ jobs:
       - run: yarn
       - run: yarn start
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GitHub creates an environment variable for the input.
+          # The environment variable created converts input names to uppercase letters and replaces spaces with _ characters.
+          # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#inputs
+          INPUT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   check:
     runs-on: ubuntu-latest

@@ -26,7 +26,7 @@ const run = async (inputs: Inputs) => {
 
 const main = async () =>
   await run({
-    token: process.env.GITHUB_TOKEN ?? '',
+    token: core.getInput('token', { required: true }),
   })
 
 main().catch((e) => core.setFailed(e instanceof Error ? e : String(e)))
