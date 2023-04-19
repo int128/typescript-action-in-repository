@@ -815,10 +815,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.3.tgz#472eaab5f15c1ffdd7f8628bd4c4f753995ec79e"
   integrity sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==
 
-"@tsconfig/node18@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-1.0.2.tgz#d0a465fbb5ae50813ad6d91542f71a6d34a5f08c"
-  integrity sha512-4//KMPpqhtqw4g25Zh27ELuMD+vgcidW4VLozYWtRn8VXJEiRPm7GqrVNFwBiL3rM9/3k0a07X5NpI78DvTpfQ==
+"@tsconfig/node18@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node18/-/node18-1.0.3.tgz#b14aed11bda116950a57fb5d223dd050e47f4fe1"
+  integrity sha512-RbwvSJQsuN9TB04AQbGULYfOGE/RnSFk/FLQ5b0NmDf5Kx2q/lABZbHQPKCO1vZ6Fiwkplu+yb9pGdLy1iGseQ==
 
 "@types/babel__core@^7.1.14":
   version "7.20.0"
