@@ -29,4 +29,7 @@ const main = async () =>
     token: core.getInput('token', { required: true }),
   })
 
-main().catch((e) => core.setFailed(e instanceof Error ? e : String(e)))
+main().catch((e: Error) => {
+  core.setFailed(e)
+  console.error(e)
+})
