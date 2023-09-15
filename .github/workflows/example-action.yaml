@@ -6,11 +6,11 @@ on:
       - main
     paths:
       - example-action/**
-      - .github/workflows/run.yaml
+      - .github/workflows/example-action.yaml
   pull_request:
     paths:
       - example-action/**
-      - .github/workflows/run.yaml
+      - .github/workflows/example-action.yaml
 
 defaults:
   run:
