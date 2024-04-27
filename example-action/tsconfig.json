@@ -1,3 +1,7 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json"
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist"
+  }
 }
