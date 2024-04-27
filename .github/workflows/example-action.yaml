@@ -30,6 +30,7 @@ jobs:
           node-version: 20
       - run: corepack enable pnpm
       - run: pnpm i
+      - run: pnpm run build
       - run: pnpm run start
         env:
           # GitHub creates an environment variable for the input.

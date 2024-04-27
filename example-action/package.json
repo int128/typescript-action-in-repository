@@ -3,6 +3,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/src",
+    "format": "prettier --write **/*.ts",
     "lint": "eslint .",
     "test": "jest"
   },

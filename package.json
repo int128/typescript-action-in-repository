@@ -1,8 +1,5 @@
 {
   "private": true,
-  "scripts": {
-    "format": "prettier --write **/*.ts"
-  },
   "type": "module",
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
