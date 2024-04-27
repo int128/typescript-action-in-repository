@@ -28,10 +28,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
-          cache-dependency-path: example-action/yarn.lock
-      - run: yarn
-      - run: yarn start
+      - run: corepack enable pnpm
+      - run: pnpm i
+      - run: pnpm run build
+      - run: pnpm run start
         env:
           # GitHub creates an environment variable for the input.
           # The environment variable created converts input names to uppercase letters and replaces spaces with _ characters.
@@ -48,10 +48,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
-          cache-dependency-path: example-action/yarn.lock
-      - run: yarn
-      - run: yarn lint --fix
-      - run: yarn format
-      - run: yarn typecheck
+      - run: corepack enable pnpm
+      - run: pnpm i
+      - run: pnpm run format
+      - run: pnpm run -r lint --fix
+      - run: pnpm run -r build
       - uses: int128/update-generated-files-action@v2
