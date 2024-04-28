@@ -7,10 +7,16 @@ on:
     paths:
       - example-action/**
       - .github/workflows/example-action.yaml
+      - package.json
+      - pnpm-*.yaml
+      - '*.config.js'
   pull_request:
     paths:
       - example-action/**
       - .github/workflows/example-action.yaml
+      - package.json
+      - pnpm-*.yaml
+      - '*.config.js'
 
 defaults:
   run:
